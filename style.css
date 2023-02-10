@@ -11,7 +11,7 @@ h1, h2, h3, h4, h5, h6, p {
     margin: 0px;
     padding: 0px;
 }
-ul li a{
+a{
    text-decoration: none;
 }
 ul, ol {
@@ -22,15 +22,14 @@ li {
     list-style: none;
 }
 input, button {
-    box-shadow: none !important;
-    outline: none !important;
+    box-shadow: none;
+    outline: none;
 }
-
-/* body{
+body{
     line-height: 1.3;
     letter-spacing: 1.020px;
     font-family: "Open Sans", sans-serif;
-} */
+}
 .navbar-brand img{
     width: 120px;
 }
@@ -53,17 +52,22 @@ input, button {
 .bird{
     width: 100%;
     border-radius: 10px;
+    position: relative;
+}
+.content{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 40px;
 }
 .image2{
     width: 100%;
-    height: 400px;
+    height: 410px;
     border-radius: 10px;
     position: relative;
 }
 .image3{
     width: 100%;
     height: 200px;
-    margin-bottom: 10px;
     border-radius: 10px;
     position: relative;
 }
@@ -82,6 +86,8 @@ footer{
     text-transform: uppercase;
     background-color: black;
     color:white;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 li{
     text-decoration: none;
@@ -89,27 +95,28 @@ li{
 }
 .box{
     background-color: white;
-    width: 480px;
-    height: 120px;
+    width: 500px;
+    height: 140px;
     position: absolute;
     left:0;
     bottom: 0;
     border-radius: 10px;
-    text-align: center;
+    padding: 10px 40px;
 }
 .info1{
     font-weight: bolder;
     font-family: Franklin Gothic Medium;
-    font-size: 18px;
+    font-size: 20px;
 }
 .box2{
     background-color: white;
-    width: 480px;
-    height: 80px;
+    width: 500px;
+    height: 140px;
     border-radius: 10px;
     position: absolute;
     left:0;
     bottom: 0;
+    padding: 10px 40px;
 }
 .container h2{
     text-align: center;
@@ -126,4 +133,32 @@ li{
     font-size: 25px;
     border-radius: 50%;
     text-align: center;
+}
+footer ul li:not(:first-child):before{
+    content: "|";
+    margin: 0px 15px;
+}
+footer ul li a{
+    color:white;
+    text-decoration: none;
+}
+.container a{
+    padding-bottom: 15px;
+}
+.container h1{
+    color: white;
+    position: absolute;
+    left: 30px;
+    right: 400px;
+    bottom: 30px;
+    letter-spacing: -2.5px;
+    line-height: 0.8;
+    font-size: 60px;
+    font-weight: bolder;
+}
+.container .play {
+    color: white;
+    position: absolute;
+    top:30px;
+    right: 30px;
 }
